@@ -7,4 +7,4 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
 app.use("/", routing);
 
-app.listen(8000);
+app.listen(80);
