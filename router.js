@@ -10,7 +10,7 @@ router.get("/", function (req, res) {
 router.post("/save", async function (req, res) {
   await db.collection("user-data").add({
     name: req.body.n,
-    her_name : req.body.q,
+    her_name: req.body.q,
     messsage: req.body.d,
   });
   res.redirect("/reply");
